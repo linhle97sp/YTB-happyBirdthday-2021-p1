@@ -60,7 +60,7 @@
                 <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
                 <img src="./MyAvatar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
                 <!-- 4. Tên của người đó -->
-                <h1 onclick="showMessage()" class="avatar__title">Quốc Định</h1>
+                <h1 onclick="showMessage()" class="avatar__title">Kiều Anh</h1>
             </div>
             
             <!-- 5. Phần nhạc -->
@@ -69,10 +69,11 @@
             </audio>
         </div>
         <script>
-          //  if (document.location.search.match(/type=embed/gi)) {
+            if (document.location.search.match(/type=embed/gi)) {
                 window.parent.postMessage("resize", "*");
             }
-            function showMessage() {
+           //function showMessage() 
+            {
                 // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
                     title: "Lời nhắn", // Tiêu đề của popup
